@@ -37,6 +37,6 @@ async fn main() {
     while true {
         let instant = Instant::now();
         let r = rpc_client.simulate_transaction(&frontrun_tx).await;
-        println!("simulation time us {:?}", instant.elapsed());
+        println!("simulation time us {:?}", instant.elapsed().as_nanos());
     }        
 }
