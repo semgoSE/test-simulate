@@ -9,7 +9,7 @@ async fn main() {
 
     // http://localhost:8899
     let rpc_client = RpcClient::new(
-        "https://mainnet.helius-rpc.com/?api-key=50b42497-c4f8-48d3-bbea-eadd76e53bd5".to_string(),
+        "http://localhost:8899".to_string(),
     );
 
     let keypair: Keypair = Keypair::from_base58_string(
